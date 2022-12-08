@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
+    <script src="https://kit.fontawesome.com/84c096262a.js" crossorigin="anonymous"></script>
+    <title>MV | Front End Developer</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        
+        <!-- Nav -->
+        <nav>
+          <h1 class="logo">Marcelle Vukoja</h1>
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+
+        <!-- Header Content -->
+        <div class="header-content">
+          <p>Front End Web Developer</p>
+          <!--  <h1>Portfolio</h1> -->
+        </div>
+      </div>
+    </div>
+    <!-- Header END -->
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about1">
+            <img src="./images/aboutme.jpg">
+          </div>
+
+          <div class="about2">
+            <h1 class="about-heading">About me</h1>
+            <p><em>"I'm a creative front end developer<br />
+              interested in what technology can do<br /> 
+              to make life easier and more enjoyable."</em></p>
+            
+            <div class="about-tabs">
+                <p class="about-links active-link" >Skills</p>
+                <p class="about-links" >Experience</p>
+                <p class="about-links" >Education</p>   
+            </div>
+
+            <div class="aboutlinks-content active-tab" id="skills">
+                <ul>
+                  <li><span>Web Development</span> -  Accessible Website Design</li><br>
+                  <li><span>Web Design</span> -  Responsive Website Design</li>
+                </ul>
+            </div>
+            <div class="aboutlinks-content" id="experience">
+                <ul>
+                  <li><span>Project 1</span> -  Brochure Style Website</li><br>
+                  <li><span>Project 2</span> -  Weather App</li><br>
+                  <li><span>Project 3</span> -  Movie Search App</li><br>
+                </ul>
+            </div>
+            <div class="aboutlinks-content" id="education">
+                <ul>
+                  <li><span>Web Development Course</span> -  Academy Xi</li><br>
+                  <li><span>Professional Communications</span> -  Open Colleges</li><br>
+                  <li><span>BBus (Accounting/Law)</span> -  Victoria University</li><br>
+                </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- About END -->
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">Portfolio</h1>
+          <div class="work-listing">
+
+            <div class="work">
+              <img src="./images/port1.jpeg">
+              <div class="layer">
+                <h3>Brochure Style Website</h3>
+                <p>This site is a mock-up of a typical website landing page.</p>
+                <a href="https://codermvee.github.io/projectResponsiveGrid/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+
+            <div class="work">
+              <img src="./images/port2.jpg">
+              <div class="layer">
+                <h3>Weather App</h3>
+                <p>This app displays weather by location using real-time data from the openweathermap.org API.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="./images/port3.jpg">
+              <div class="layer">
+                <h3>Movie Search App</h3>
+                <p>This app searches trending movies using data fetched from themoviedb.org API.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Portfolio END -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+
+            <div class="contact1">
+              <h1 class="sub-title">Contact me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>   contact@example.com</p>
+              <div class="social-icons">
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href=""><i class="fa-brands fa-square-github"></i></a>
+              </div>
+              <a href=""></a>
+            </div>
+
+            <div class="contact2">
+              <form>
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <textarea name="Message" rows="5" placeholder="Enter message"></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <!-- Contact END -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <h4>&copy; 2022 Marcelle Vukoja. All Rights Reserved.</h4>
+    </div>
+    <!-- Copyright End-->
+    
   </body>
 </html>
