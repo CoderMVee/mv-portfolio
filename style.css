@@ -60,14 +60,11 @@ nav ul li a {
     font-size: 20px;
     font-weight: 500;
     position: relative;
-    transition: 0.4s linear;
+    transition: 0.1s linear;
 }
 nav ul li a:hover {
     color: rgb(93, 185, 139);
     width: 100%;
-}
-.open {
-    display: block;
 }
 .header-content {
     margin-top: 1.0%;
@@ -100,13 +97,14 @@ nav ul li a:hover {
 }
 .about-heading {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 .about-heading p {
     line-height: 1.6;
 }
 .about-tabs {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 30px 0 15px;
 }
 .about-links {
     margin-right: 50px;
@@ -114,16 +112,18 @@ nav ul li a:hover {
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    transition: 0.4s linear;
+    transition: 0.1s linear;
 }
 .about-links:hover {
+    color: rgb(93, 185, 139);
+}
+.about-links.active-link {
     color: rgb(93, 185, 139);
 }
 .aboutlinks-content ul li {
     margin: 10px 0;
 }
 .aboutlinks-content ul li span {
-    /* color: rgb(93, 185, 139); */
     font-size: 16px;
     font-weight: 500;
 }
@@ -142,6 +142,9 @@ nav ul li a:hover {
 /* Portfolio */
 #portfolio {
     padding: 50px 0;
+}
+#portfolio h1 {
+    font-size: 40px;
 }
 .work-listing {
     display: grid;
@@ -273,13 +276,10 @@ nav .fa-solid {
 
 @media only screen and (max-width: 768px) {
     .logo {
-        font-size: 25px;
+        font-size: 40px;
     }
     .header-content {
-        font-size: 10px;
-    }
-    .header-content h1 {
-        font-size: 15px;
+        font-size: 20px;
     }
     nav .fa-solid {
         display: block;
@@ -289,15 +289,15 @@ nav .fa-solid {
         background: #87A497;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: 0;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 100;
     }
     nav ul li {
         display: block;
-        margin: 25px;
+        margin: 20px;
     }
     nav ul .fa-solid {
         position: absolute;
