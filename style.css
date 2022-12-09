@@ -251,6 +251,7 @@ form input, form textarea {
     margin: 15px 0;
     font-size: 18px;
     border-radius: 5px;
+    caret-color: rgb(75, 149, 112);
 }
 form .btn {
     padding: 14px 60px;
@@ -270,23 +271,24 @@ form .btn {
 /* Copyright END */
 
 /* Media queries */
+/*     breakpoint - smaller screens 700px */
 nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
     .logo {
-        font-size: 40px;
+        font-size: 30px;
     }
     .header-content {
-        font-size: 20px;
+        font-size: 15px;
     }
     nav .fa-solid {
         display: block;
         font-size: 25px;
     }
     nav ul {
-        background: #87A497;
+        background: linear-gradient(rgba(0,0,0,0.6),rgb(93, 185, 139));
         position: fixed;
         top: 0;
         right: 0;
@@ -306,5 +308,12 @@ nav .fa-solid {
         cursor: pointer;
     }
 }
+/*.showMenu {
+    right: 0;
+}*/
+
+/*     breakpoint - tablets  900px,   */
+/*     breakpoint - laptops 1108px  */
+/*     breakpoints - @media screen and (min-width: 900px) and (max-width: 1108px)*/
 
 /* Media queries END */
