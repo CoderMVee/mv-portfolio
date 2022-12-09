@@ -13,3 +13,23 @@ for (let i = 0; i < aboutLinks.length; i++) {
     })
 }
 
+
+
+/*let menu = document.getElementById("menu");
+let openMenu = document.getElementsByClassName("fa-bars");
+let closeMenu = document.getElementsByClassName("fa-xmark");
+let menuIcons = document.getElementsByClassName("fa-solid");
+
+function toggleMenu() {
+    if (menu.className.contains("showMenu")) {
+        menu.className.remove("showMenu");
+        closeMenu.style.display = "none";
+        openMenu.style.display = "block";
+    } else {
+        menu.className.add("showMenu");
+        closeMenu.style.display = "block";
+        openMenu.style.display = "none";
+    }
+}
+
+menuIcons.addEventListener("click", toggleMenu);*/
